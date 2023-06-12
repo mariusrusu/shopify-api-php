@@ -233,6 +233,8 @@ class Http
      */
     private function logApiDeprecation(string $url, string $reason): void
     {
+        return;
+        
         $warningFilePath = $this->getApiDeprecationTimestampFilePath();
 
         $lastWarning = null;
